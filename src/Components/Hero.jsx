@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from "./Navbar";
 import { Search } from "lucide-react";
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 // Main Hero Component (Static)
 const PerfumeHero = () => {
@@ -54,7 +55,7 @@ const PerfumeHero = () => {
 
               {/* Shop Now Button */}
               <button className="mt-8 px-8 py-3 bg-black text-white rounded-full text-sm font-light hover:bg-gray-800 transition flex items-center space-x-2">
-                <span>Shop Now</span>
+                <Link to={'/Shop'}>Shop Now</Link>
                 <span className="text-lg">→</span>
               </button>
             </motion.div>
